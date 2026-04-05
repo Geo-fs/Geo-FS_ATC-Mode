@@ -46,7 +46,7 @@ src/
 docs/
   architecture and integration notes
 public/
-  bundled KMSP and regional chart assets
+  bundled KMSP chart assets
 scripts/
   live GeoFS smoke harness and local debugging scripts
 ```
@@ -110,7 +110,7 @@ Before publishing or accepting contributions, treat this repository as an unoffi
 - GeoFS protocol and page behavior can change without notice.
 - Browser focus and throttling behavior matter for live `/update` ingestion.
 - Anonymous test sessions do not provide full multiplayer chat capability.
-- Bundled references and charts should only include assets you are comfortable distributing publicly.
+- Large regional chart files should be handled as optional local imports rather than bundled repo assets.
 
 ## Known limitations
 
@@ -132,4 +132,4 @@ Before publishing or accepting contributions, treat this repository as an unoffi
 
 ## License
 
-No license has been added yet. Do not assume this repository is open for unrestricted reuse until a license is explicitly included.
+This repository is licensed under the Apache 2.0 License. See [LICENSE](LICENSE).
