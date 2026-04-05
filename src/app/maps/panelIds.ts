@@ -1,0 +1,10 @@
+export const getSurfaceSourceId = (panelId: string) => `${panelId}-airport-surface`;
+export const getRunwaySourceId = (panelId: string) => `${panelId}-runways`;
+export const getTrafficSourceId = (panelId: string) => `${panelId}-traffic`;
+export const getSurfaceFillLayerId = (panelId: string) => `${panelId}-surface-fill`;
+export const getSurfaceLineLayerId = (panelId: string) => `${panelId}-surface-line`;
+export const getRunwayLayerId = (panelId: string) => `${panelId}-runways`;
+export const getRunwayLabelLayerId = (panelId: string) => `${panelId}-runway-labels`;
+export const getDiscoverySourceId = (panelId: string) => `${panelId}-regional-traffic`;
+export const getConflictSourceId = (panelId: string) => `${panelId}-conflicts`;
+export const getRouteSourceId = (panelId: string) => `${panelId}-routes`;

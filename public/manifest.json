@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "GeoFS ATC Workspace",
+  "version": "0.1.0",
+  "description": "ATC controller workspace for GeoFS multiplayer around KMSP.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://www.geo-fs.com/*",
+    "https://mps.geo-fs.com/*",
+    "https://weather.geo-fs.com/*",
+    "https://aviationweather.gov/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open GeoFS ATC Workspace"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.geo-fs.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js"],
+      "matches": ["https://www.geo-fs.com/*"]
+    }
+  ]
+}

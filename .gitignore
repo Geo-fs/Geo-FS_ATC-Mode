@@ -1,0 +1,30 @@
+node_modules/
+dist/
+output/
+
+*.log
+*.tmp
+*.temp
+
+*.tsbuildinfo
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+.codex
+.codex/
+
+.env
+.env.*
+!.env.example
+
+/FlightAware_MSP_APD_AIRPORT DIAGRAM.PDF
+/KMSP Airport Diagram-Ground.png
+/KMSP AIRSPACE FAA CHART.png
+/Minneapolis-St_Paul_TAC.pdf
+/Twin_Cities.pdf
+/geo_fs_endpoint_data_structure_notes.md
+/public/charts/twincities/twin-cities-sectional.pdf
